@@ -1,0 +1,43 @@
+{
+    "name": "jfcherng-roundcube/quota",
+    "description": "A plugin that shows quota information for Roundcube.",
+    "type": "roundcube-plugin",
+    "license": "MIT",
+    "homepage": "https://github.com/jfcherng-roundcube/plugin-quota",
+    "version": "0.0.21",
+    "authors": [
+        {
+            "name": "Jack Cherng",
+            "email": "jfcherng@gmail.com"
+        },
+        {
+            "name": "Victor Kirov",
+            "email": "victor.kirov.eu@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "roundcube/plugin-installer": "~0.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3",
+        "liip/rmt": "^1.5"
+    },
+    "config": {
+        "platform": {
+            "php": "7.1.3"
+        },
+        "sort-packages": true,
+        "allow-plugins": {
+            "roundcube/plugin-installer": false
+        }
+    },
+    "scripts": {
+        "fix": [
+            "php-cs-fixer fix --verbose"
+        ],
+        "lint": [
+            "php-cs-fixer fix --verbose --dry-run --stop-on-violation"
+        ]
+    }
+}
